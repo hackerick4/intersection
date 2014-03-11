@@ -1,3 +1,9 @@
+/* idea :
+ * 1. 先將極限狀況列出 i.e. 10 4 2 1 -> XXXXOXXOXO O
+ * 2. 若自己的上一個為X則此格為必著色點
+ * 3. 若多出的O為2個，則第二次檢查為上上一個是否為X
+ * 4. 若每次都是必著色點，則此點為所求*/
+
 #include <stdio.h>
 void intersection(int count , int spaceCount,int blackCount,unsigned int a[]){
 	 unsigned int i=0 , j=0 , p=0 , result[ 50 ]={0};
